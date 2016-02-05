@@ -27,6 +27,6 @@ class GetFilterOptions extends Event
             return;
         }
 
-        $event->setOption('categories', $GLOBALS['TL_LANG']['tl_module']['filterCategories']);
+        $event->setOption('categories', $GLOBALS['TL_LANG']['tl_module']['filterPropertyCategories']);
     }
 }
