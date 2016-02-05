@@ -35,8 +35,6 @@
     },
     "minimum-stability": "dev",
     "require-dev": {
-        "squizlabs/php_codesniffer": "~2.3",
-        "phpunit/phpunit": "~3.7"
     },
     "autoload": {
         "psr-4": {
@@ -50,7 +48,7 @@
             }
         },
         "branch-alias": {
-            "dev-develop": "1.0.x-dev"
+            "dev-develop": "2.0.x-dev"
         }
     }
 }
