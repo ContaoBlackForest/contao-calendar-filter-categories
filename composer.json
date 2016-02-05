@@ -13,7 +13,8 @@
         "php": ">=5.3",
         "contao/core": ">=3.2,<4",
         "contao-community-alliance/composer-plugin": "~2.0",
-        "contaoblackforest/contao-calendar-filter": "dev-develop"
+        "marebe1602/mae_event_categories": "~1.0",
+        "contaoblackforest/contao-calendar-filter": "~2.0"
     },
     "license": "LGPL-3.0+",
     "authors": [
@@ -34,8 +35,6 @@
     },
     "minimum-stability": "dev",
     "require-dev": {
-        "squizlabs/php_codesniffer": "~2.3",
-        "phpunit/phpunit": "~3.7"
     },
     "autoload": {
         "psr-4": {
@@ -49,7 +48,7 @@
             }
         },
         "branch-alias": {
-            "dev-develop": "1.0.x-dev"
+            "dev-develop": "2.0.x-dev"
         }
     }
 }

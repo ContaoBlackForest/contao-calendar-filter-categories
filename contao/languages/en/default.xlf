@@ -1,0 +1,9 @@
+<?xml version="1.0" ?><xliff version="1.1">
+    <file datatype="php" original="system/modules/contao-calendar-filter-categories/languages/en/default.xlf" source-language="en" target-language="en">
+        <body>
+            <trans-unit id="FMD.eventfilter.categories">
+                <source>Category</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
