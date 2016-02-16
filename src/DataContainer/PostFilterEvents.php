@@ -34,15 +34,15 @@ class PostFilterEvents extends Event
 
     protected function filterEvents(&$events, $filter)
     {
-        foreach ($events as $index => $value) {
+        foreach ($events as $index => &$value) {
             $chunks = deserialize($value['categories']);
-            if ($chunks === null) {
+            if ($chunks === null && !array_key_exists('categories', $value)) {
                 $this->filterEvents($value, $filter);
             }
-            if ($chunks === null) {
-                echo "";
-            }
 
+            if (is_string($chunks) || $chunks === null) {
+                $chunks = array();
+            }
             if (empty($value)
                 || (array_key_exists('categories', $value)
                     && !in_array($filter, $chunks))
